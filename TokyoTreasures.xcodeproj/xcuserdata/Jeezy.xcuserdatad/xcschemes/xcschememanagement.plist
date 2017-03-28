@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>TodaysTreasures.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>TokyoTreasures.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>941573471E7BB4FD005FCBFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>94804CE21E84F4B40051E95D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -12,7 +12,44 @@
 		941573511E7BB4FD005FCBFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9415734F1E7BB4FD005FCBFE /* Main.storyboard */; };
 		941573531E7BB4FD005FCBFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 941573521E7BB4FD005FCBFE /* Assets.xcassets */; };
 		941573561E7BB4FD005FCBFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 941573541E7BB4FD005FCBFE /* LaunchScreen.storyboard */; };
+		9415735E1E7BBB52005FCBFE /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9415735D1E7BBB52005FCBFE /* HomeModel.swift */; };
+		941573601E7BBB7E005FCBFE /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9415735F1E7BBB7E005FCBFE /* OrderModel.swift */; };
+		941573661E7D1DED005FCBFE /* OrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941573651E7D1DED005FCBFE /* OrderController.swift */; };
+		94804CE61E84F4B50051E95D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94804CE51E84F4B50051E95D /* NotificationCenter.framework */; };
+		94804CE91E84F4B50051E95D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94804CE81E84F4B50051E95D /* TodayViewController.swift */; };
+		94804CEC1E84F4B50051E95D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94804CEA1E84F4B50051E95D /* MainInterface.storyboard */; };
+		94804CF01E84F4B50051E95D /* TodaysTreasures.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94804CE31E84F4B40051E95D /* TodaysTreasures.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94804CF51E84F80F0051E95D /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9415735D1E7BBB52005FCBFE /* HomeModel.swift */; };
+		94804CF61E84F9910051E95D /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9415735F1E7BBB7E005FCBFE /* OrderModel.swift */; };
+		94804CF91E85128F0051E95D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 941573521E7BB4FD005FCBFE /* Assets.xcassets */; };
+		94B2BAA51E853D3C00842491 /* TodayOrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B2BAA41E853D3C00842491 /* TodayOrderController.swift */; };
+		94CE4AC11E8524D800313BF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9415734D1E7BB4FD005FCBFE /* ViewController.swift */; };
+		94CE4AC21E85262300313BF5 /* OrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941573651E7D1DED005FCBFE /* OrderController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94804CEE1E84F4B50051E95D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 941573401E7BB4FD005FCBFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94804CE21E84F4B40051E95D;
+			remoteInfo = TodaysTreasures;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94804CF41E84F4B50051E95D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				94804CF01E84F4B50051E95D /* TodaysTreasures.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		941573481E7BB4FD005FCBFE /* TokyoTreasures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TokyoTreasures.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +59,17 @@
 		941573521E7BB4FD005FCBFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		941573551E7BB4FD005FCBFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		941573571E7BB4FD005FCBFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9415735D1E7BBB52005FCBFE /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		9415735F1E7BBB7E005FCBFE /* OrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		941573651E7D1DED005FCBFE /* OrderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderController.swift; sourceTree = "<group>"; };
+		94804CE31E84F4B40051E95D /* TodaysTreasures.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodaysTreasures.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		94804CE51E84F4B50051E95D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		94804CE81E84F4B50051E95D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		94804CEB1E84F4B50051E95D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		94804CED1E84F4B50051E95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94804CF71E85106B0051E95D /* TodaysTreasures.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodaysTreasures.entitlements; sourceTree = "<group>"; };
+		94804CF81E8511470051E95D /* TokyoTreasures.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TokyoTreasures.entitlements; sourceTree = "<group>"; };
+		94B2BAA41E853D3C00842491 /* TodayOrderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayOrderController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +80,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94804CE01E84F4B40051E95D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94804CE61E84F4B50051E95D /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				9415734A1E7BB4FD005FCBFE /* TokyoTreasures */,
+				94804CE71E84F4B50051E95D /* TodaysTreasures */,
+				94804CE41E84F4B50051E95D /* Frameworks */,
 				941573491E7BB4FD005FCBFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				941573481E7BB4FD005FCBFE /* TokyoTreasures.app */,
+				94804CE31E84F4B40051E95D /* TodaysTreasures.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +113,38 @@
 		9415734A1E7BB4FD005FCBFE /* TokyoTreasures */ = {
 			isa = PBXGroup;
 			children = (
+				94804CF81E8511470051E95D /* TokyoTreasures.entitlements */,
 				9415734B1E7BB4FD005FCBFE /* AppDelegate.swift */,
 				9415734D1E7BB4FD005FCBFE /* ViewController.swift */,
 				9415734F1E7BB4FD005FCBFE /* Main.storyboard */,
 				941573521E7BB4FD005FCBFE /* Assets.xcassets */,
 				941573541E7BB4FD005FCBFE /* LaunchScreen.storyboard */,
 				941573571E7BB4FD005FCBFE /* Info.plist */,
+				9415735D1E7BBB52005FCBFE /* HomeModel.swift */,
+				9415735F1E7BBB7E005FCBFE /* OrderModel.swift */,
+				941573651E7D1DED005FCBFE /* OrderController.swift */,
 			);
 			path = TokyoTreasures;
+			sourceTree = "<group>";
+		};
+		94804CE41E84F4B50051E95D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94804CE51E84F4B50051E95D /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94804CE71E84F4B50051E95D /* TodaysTreasures */ = {
+			isa = PBXGroup;
+			children = (
+				94B2BAA41E853D3C00842491 /* TodayOrderController.swift */,
+				94804CF71E85106B0051E95D /* TodaysTreasures.entitlements */,
+				94804CE81E84F4B50051E95D /* TodayViewController.swift */,
+				94804CEA1E84F4B50051E95D /* MainInterface.storyboard */,
+				94804CED1E84F4B50051E95D /* Info.plist */,
+			);
+			path = TodaysTreasures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +157,34 @@
 				941573441E7BB4FD005FCBFE /* Sources */,
 				941573451E7BB4FD005FCBFE /* Frameworks */,
 				941573461E7BB4FD005FCBFE /* Resources */,
+				94804CF41E84F4B50051E95D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				94804CEF1E84F4B50051E95D /* PBXTargetDependency */,
 			);
 			name = TokyoTreasures;
 			productName = TokyoTreasures;
 			productReference = 941573481E7BB4FD005FCBFE /* TokyoTreasures.app */;
 			productType = "com.apple.product-type.application";
+		};
+		94804CE21E84F4B40051E95D /* TodaysTreasures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94804CF11E84F4B50051E95D /* Build configuration list for PBXNativeTarget "TodaysTreasures" */;
+			buildPhases = (
+				94804CDF1E84F4B40051E95D /* Sources */,
+				94804CE01E84F4B40051E95D /* Frameworks */,
+				94804CE11E84F4B40051E95D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodaysTreasures;
+			productName = TodaysTreasures;
+			productReference = 94804CE31E84F4B40051E95D /* TodaysTreasures.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,7 +198,23 @@
 				TargetAttributes = {
 					941573471E7BB4FD005FCBFE = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RGK5X6Q592;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					94804CE21E84F4B40051E95D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RGK5X6Q592;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -114,6 +232,7 @@
 			projectRoot = "";
 			targets = (
 				941573471E7BB4FD005FCBFE /* TokyoTreasures */,
+				94804CE21E84F4B40051E95D /* TodaysTreasures */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +248,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94804CE11E84F4B40051E95D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94804CF91E85128F0051E95D /* Assets.xcassets in Resources */,
+				94804CEC1E84F4B50051E95D /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -136,12 +264,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				941573601E7BBB7E005FCBFE /* OrderModel.swift in Sources */,
+				941573661E7D1DED005FCBFE /* OrderController.swift in Sources */,
 				9415734E1E7BB4FD005FCBFE /* ViewController.swift in Sources */,
 				9415734C1E7BB4FD005FCBFE /* AppDelegate.swift in Sources */,
+				9415735E1E7BBB52005FCBFE /* HomeModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94804CDF1E84F4B40051E95D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B2BAA51E853D3C00842491 /* TodayOrderController.swift in Sources */,
+				94804CF51E84F80F0051E95D /* HomeModel.swift in Sources */,
+				94CE4AC21E85262300313BF5 /* OrderController.swift in Sources */,
+				94804CF61E84F9910051E95D /* OrderModel.swift in Sources */,
+				94CE4AC11E8524D800313BF5 /* ViewController.swift in Sources */,
+				94804CE91E84F4B50051E95D /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94804CEF1E84F4B50051E95D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94804CE21E84F4B40051E95D /* TodaysTreasures */;
+			targetProxy = 94804CEE1E84F4B50051E95D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9415734F1E7BB4FD005FCBFE /* Main.storyboard */ = {
@@ -158,6 +310,14 @@
 				941573551E7BB4FD005FCBFE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		94804CEA1E84F4B50051E95D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94804CEB1E84F4B50051E95D /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -257,8 +417,11 @@
 		9415735B1E7BB4FD005FCBFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RGK5X6Q592;
 				INFOPLIST_FILE = TokyoTreasures/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = none.TokyoTreasures;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -269,11 +432,42 @@
 		9415735C1E7BB4FD005FCBFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RGK5X6Q592;
 				INFOPLIST_FILE = TokyoTreasures/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = none.TokyoTreasures;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		94804CF21E84F4B50051E95D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = RGK5X6Q592;
+				INFOPLIST_FILE = TodaysTreasures/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = none.TokyoTreasures.TodaysTreasures;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		94804CF31E84F4B50051E95D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = RGK5X6Q592;
+				INFOPLIST_FILE = TodaysTreasures/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = none.TokyoTreasures.TodaysTreasures;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -297,6 +491,16 @@
 				9415735C1E7BB4FD005FCBFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94804CF11E84F4B50051E95D /* Build configuration list for PBXNativeTarget "TodaysTreasures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94804CF21E84F4B50051E95D /* Debug */,
+				94804CF31E84F4B50051E95D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
