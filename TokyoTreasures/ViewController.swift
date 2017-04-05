@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var feedItems: NSArray = NSArray()
     var selectedItem: OrderModel = OrderModel()
     @IBOutlet weak var listTableView: UITableView!
+    @IBOutlet weak var activityView: UIActivityIndicatorView!
     
     lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
@@ -24,7 +25,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     override func viewDidLoad() {
         super.viewDidLoad()
-            
+        
+        if let av = self.activityView {
+            av.hidesWhenStopped = true
+        }
+        toggleActivityAnimation(true)
+        
         //set delegates and initialize homeModel
         self.listTableView.delegate = self
         self.listTableView.dataSource = self
@@ -32,8 +38,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.currentUrl = "http://203.105.90.20/ssa/service.php"
         initHomeModel(withUrl: self.currentUrl)
         
-        self.title = "Tokyo Treasures"
+        self.title = "Order Status"
         self.listTableView.addSubview(self.refreshControl)
+        toggleActivityAnimation(false)
+    }
+    
+    func toggleActivityAnimation(_ activityAnimating: Bool) {
+        if let av = self.activityView {
+            if(activityAnimating) {
+                av.startAnimating()
+            } else {
+                av.stopAnimating()
+            }
+        }
     }
     
     func initHomeModel(withUrl: String) {
@@ -56,16 +73,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     @IBAction func switchView() {
+        toggleActivityAnimation(true)
         switch self.currentUrl {
         case "http://203.105.90.20/ssa/service.php":
             self.currentUrl = "http://203.105.90.20/ssa/history.php"
-            self.title = "Tokyo Treasures (Historical)"
+            self.title = "Order Status (Historical)"
         default:
             self.currentUrl = "http://203.105.90.20/ssa/service.php"
-            self.title = "Tokyo Treasures"
+            self.title = "Order Status"
         }
         initHomeModel(withUrl: self.currentUrl)
         self.listTableView.reloadData()
+        toggleActivityAnimation(false)
     }
     
     func handleRefresh(_ refreshControl: UIRefreshControl) {
